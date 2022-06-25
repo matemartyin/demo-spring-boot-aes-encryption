@@ -1,4 +1,4 @@
-package com.matemartyin.crypt.config;
+package com.matemartyin.aesencryptiondemo.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;

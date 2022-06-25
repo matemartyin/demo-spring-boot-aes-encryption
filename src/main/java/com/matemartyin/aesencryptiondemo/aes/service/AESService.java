@@ -1,7 +1,7 @@
-package com.matemartyin.crypt.aes.service;
+package com.matemartyin.aesencryptiondemo.aes.service;
 
-import com.matemartyin.crypt.aes.service.dto.DecryptMessage;
-import com.matemartyin.crypt.aes.service.dto.EncryptMessage;
+import com.matemartyin.aesencryptiondemo.aes.service.dto.DecryptMessage;
+import com.matemartyin.aesencryptiondemo.aes.service.dto.EncryptMessage;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;

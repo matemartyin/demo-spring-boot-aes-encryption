@@ -1,8 +1,8 @@
-package com.matemartyin.crypt;
+package com.matemartyin.aesencryptiondemo;
 
-import com.matemartyin.crypt.aes.service.AESService;
-import com.matemartyin.crypt.aes.service.dto.DecryptMessage;
-import com.matemartyin.crypt.aes.service.dto.EncryptMessage;
+import com.matemartyin.aesencryptiondemo.aes.service.AESService;
+import com.matemartyin.aesencryptiondemo.aes.service.dto.DecryptMessage;
+import com.matemartyin.aesencryptiondemo.aes.service.dto.EncryptMessage;
 
 import java.util.Scanner;
 

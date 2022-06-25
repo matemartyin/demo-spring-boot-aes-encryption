@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hello</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <h1>AES encryption</h1>
+
+  <form action="#" th:action="@{/encrypt}" th:object="${encryptMessage}" method="post">
+    <h2>Encrypt</h2>
+    <table>
+      <tr>
+        <td><label th:text="'Plaintext'"/></td>
+        <td><input type="text" th:field="*{plainText}" /></td>
+      </tr>
+      <tr>
+        <td><label th:text="'Password'"/></td>
+        <td><input type="password" th:field="*{password}" /></td>
+      </tr>
+      <tr>
+        <p th:text="${encrypted}"></p>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Encrypt" /></td>
+      </tr>
+    </table>
+
+  </form>
+
+  <form action="#" th:action="@{/decrypt}" th:object="${decryptMessage}" method="post">
+    <h2>Decrypt</h2>
+    <table>
+      <tr>
+        <td><label th:text="'Ciphertext'"/></td>
+        <td><input type="text" th:field="*{cipherText}" /></td>
+      </tr>
+      <tr>
+        <td><label th:text="'Password'"/></td>
+        <td><input type="password" th:field="*{password}" /></td>
+      </tr>
+      <tr>
+        <p th:text="${decrypted}"></p>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Decrypt" /></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
